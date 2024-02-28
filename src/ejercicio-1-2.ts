@@ -12,6 +12,7 @@ export class ArithmeticableCollection<T extends Arithmeticable<T>> {
 
   /**
    * addArithmeticable
+   * @param element El elemento que deseamos añadir
    */
   public addArithmeticable(element: T): void {
     this.items.push(element);
@@ -31,6 +32,7 @@ export class ArithmeticableCollection<T extends Arithmeticable<T>> {
 
   /**
    * getNumberofArithmeticals
+   * @returns El número de elementos de la coleccion
    */
   public getNumberofArithmeticals(): number {
     let count: number = 0;

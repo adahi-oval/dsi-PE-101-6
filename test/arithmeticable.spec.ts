@@ -24,6 +24,10 @@ describe('Arithmeticable tests', () => {
     it('Sus métodos funcionan correctamente', () =>{
       expect(ratioCollection.getNumberofArithmeticals()).to.eq(2);
       expect(ratioCollection.getArithmeticable(0)).to.deep.eq(ratio1);
+
+      ratioCollection.addArithmeticable(ratio3);
+      expect(ratioCollection.getNumberofArithmeticals()).to.eq(3);
+
       expect(complexCollection.getNumberofArithmeticals()).to.eq(2);
       expect(complexCollection.getArithmeticable(0)).to.deep.eq(complex1);
     });
