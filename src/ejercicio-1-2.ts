@@ -1,10 +1,3 @@
-/*  
-Diseñe una clase 'Complex' y aproveche la clase 'Rational' de prácticas anteriores. Ambas deben implementar la interfaz 'Arithmeticable'.
-
-Cree instancias de la clase genérica 'ArithmeticableCollection' a partir de sus clases 'Complex' y 'Rational' y demuestre su correcto funcionamiento.
-Trate de respetar los principios SOLID en su diseño de clases e interfaces. 
-*/
-
 export interface Arithmeticable<T> {
   add(other: T): T;
   sub(other: T): T;
